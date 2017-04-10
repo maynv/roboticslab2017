@@ -1,0 +1,78 @@
+<html lang="vi">
+	<head>
+		<title> </title>
+		<meta />
+		<meta charset="utf-8"/>
+		<link rel="stylesheet" href="normalize.css" />
+		<link rel="stylesheet" href="style.css" />
+		
+	</head>
+	<body>
+		<div class="framre" ></div>
+		<div id="container" >
+			<div id="menu">
+				<ul>
+					<li><a href="https://www.facebook.com/mayost304"> HOME </a></li>
+					<li><a href="http://fet.uet.vnu.edu.vn/"> FET </a></li>
+					<li><a href="home1.html"> LIÊN HỆ</a></li>
+					
+				</ul>
+			</div><!--end.home-->
+			<div id="content">
+					<div id="header" >
+						<div id="logo">
+							<img src="logo_FET_Small_Background.jpg" height="80px" width="300px"  alt=" Robot" >
+						</div>
+						<div class="slogan">
+							<p><p> <font size="5" <strong>ROBOTICSLAB  </strong></font></p></p>
+						</div>
+					</div><!-- end.header -->
+				
+					<div class="rowauto" id="intro">
+					
+						<div id="sensorauto" class="col">
+								<div class="title"><i class="fa fa-cloud"    style="font-size:24px ; color:red;"></i><p> 
+								<font size="5" color="red" <strong>ROBOT </strong></font></p></div>
+							<div class="sonarauto">
+								
+								<!-- START SENSOR-->
+								<div class="box1">{{sonar[1]}}</div>
+								<div class="circle">{{direct}}°</div>	
+								<div class="box2">{{sonar[0]}}</div>
+								<div class="box3">{{sonar[2]}}</div>
+								<div class="box4">{{sonar[3]}}</div>
+								<div class="box5">{{sonar[4]}}</div>
+								
+							</div>
+							<div class="title" ><p>TEMPERATURE </p>
+								<div id="temp"><font  size ="5">{{temp}}°C</font></div>
+							</div>
+							<div class="noti">
+								<div id="noti_title">
+									NOTIFICATIONS 
+								
+								</div>
+								<div class="title">ESP8266:{{stt}}</div>
+								<div class="title">PIR :{{pir}}</div>
+							</div>	
+							<div class="title">
+								<button class="button" ng-click="update()">
+								UPDATE NOW !
+							</div>
+						
+						</div><!--END.SENSOR-->
+						
+							
+					
+						<div id="control" class="col">
+						
+						
+						
+					</div>
+			</div><!-- end.content -->
+			<div id="footer">
+				<p> Copyright &copy 2017 RoboticsLab 	</p>
+			</div> <!-- end.footer -->
+		</div>
+	</body>
+</html>

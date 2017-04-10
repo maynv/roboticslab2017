@@ -1,0 +1,21 @@
+<?php
+	
+
+		echo $name;
+		$name=$_POST['username'];
+		$pass=$_POST['password'];
+		if($name=='roboticslab' & $pass=='12345678'){
+			session_register('name');
+			session_register('pass');
+			header("location:index.html");
+			
+			
+		}
+		else{
+			echo ' LOGIN WRONG ';
+		}
+		
+	
+		
+
+?>
